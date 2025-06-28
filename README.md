@@ -35,7 +35,7 @@ Veja como está a interface do projeto:
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-emerald?logo=github&logoColor=white)](https://mateusaraujos.github.io/projeto-html-css/)
 
-[![Deploy com Vercel](https://img.shields.io/badge/Vercel-em%20breve-black?logo=vercel&logoColor=white)](https://seu-projeto.vercel.app)
+[![Deploy com Vercel](https://img.shields.io/badge/Vercel-online-emerald?logo=vercel&logoColor=white)](https://projeto-html-css-umber.vercel.app)
 
 ## Feito por
 
