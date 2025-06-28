@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 -->
 # Projeto de Teste com HTML/CSS
 
 Este projeto foi criado como parte de uma plano de estudos Full Stack com foco no futuro como Engenheiro na área **Desktop Platform**.
@@ -17,7 +18,9 @@ Este projeto foi criado como parte de uma plano de estudos Full Stack com foco n
 
 Veja como está a interface do projeto:
 
-![{Interface de Teste}](./interfacePrint.png)
+<p align="center">
+  <img src="./interfacePrint.png" alt="Interface de Teste" width="400"/>
+</p>
 
 ## Tecnologias usadas
 
