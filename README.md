@@ -31,11 +31,12 @@ Veja como está a interface do projeto:
 - Git
 - GitHub
 
-## Veja ao vivo
+## Deploy
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-emerald?logo=github&logoColor=white)](https://mateusaraujos.github.io/projeto-html-css/)
+🔗 Acesse o projeto em:
 
-[![Deploy com Vercel](https://img.shields.io/badge/Vercel-online-emerald?logo=vercel&logoColor=white)](https://projeto-html-css-umber.vercel.app)
+- [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-emerald?logo=github&logoColor=white)](https://mateusaraujos.github.io/projeto-html-css/)
+- [![Deploy com Vercel](https://img.shields.io/badge/Vercel-online-emerald?logo=vercel&logoColor=white)](https://projeto-html-css-umber.vercel.app)
 
 ## Feito por
 
