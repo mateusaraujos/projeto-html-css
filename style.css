@@ -73,6 +73,30 @@ li {
     text-align: center;
 }
 
+#form-contato {
+    display: flex;
+    gap: 15px 5px;
+    margin-top: 20px;
+}
+
+.input-container {
+    height: 25px;
+}
+
+.erro {
+    border: 2px solid red;
+}
+
+.sucesso {
+    border: 2px solid green;
+}
+
+.erro-msg {
+    color: red;
+    font-size: 0.85rem;
+    display: none;
+}
+
 .card {
     background: var(--card-bg);
     color: var(--text-color);

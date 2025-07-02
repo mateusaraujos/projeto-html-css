@@ -20,15 +20,38 @@ function trocarTexto() {
 }
 
 function validarFormulario() {
-    const nome = document.getElementById("nome").value.trim(); // Remove espaços em branco
-	const email = document.getElementById("email").value.trim();
+    const nomeInput = document.getElementById("nome");
+	const emailInput = document.getElementById("email");
+    const erroNome = document.getElementById("erro-nome");
+    const erroEmail = document.getElementById("erro-email");
 
-    if (nome === "" || email === "") {
-        alert("Por favor, preencha todos os campos corretamente.");
-        return;
+    let valido = true;
+
+    // Validação do nome
+    if (nomeInput.value.trim() === "") {
+        nomeInput.classList.add("erro");
+        erroNome.innerText = "O nome é obrigatório.";
+        erroNome.style.display = "block";
+        valido = false;
+    } else {
+        nomeInput.classList.remove("erro");
+        nomeInput.classList.add("sucesso");
+        erroNome.style.display = "none";
     }
 
-    console.log(`Nome: ${nome}`);
-    console.log(`E-mail: ${email}`);
-    alert("Formulário enviado com sucesso!");
+    // Validação do email
+    if (emailInput.value.trim() === "") {
+        emailInput.classList.add("erro");
+        erroEmail.innerText = "O e-mail é obrigatório.";
+        erroEmail.style.display = "block";
+        valido = false;
+    } else {
+        emailInput.classList.remove("erro");
+        emailInput.classList.add("sucesso");
+        erroEmail.style.display = "none";
+    }
+
+    if (valido) {
+        alert("Formulário enviado com sucesso!");
+    }
 }
