@@ -84,11 +84,17 @@ li {
 }
 
 .erro {
+    outline: none; /* Só remove quando adicionar box-shadow */
+    box-shadow: 0 0 0 1px red;
     border: 2px solid red;
+    background-color: lightcoral;
 }
 
 .sucesso {
+    outline: none; /* Só remove quando adicionar box-shadow */
+    box-shadow: 0 0 0 1px green;
     border: 2px solid green;
+    background-color: lightgreen;
 }
 
 .erro-msg {
