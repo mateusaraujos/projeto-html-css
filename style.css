@@ -75,12 +75,13 @@ li {
 
 #form-contato {
     display: flex;
-    gap: 15px 5px;
-    margin-top: 20px;
+    flex-direction: column;
+    gap: 5px 0px;
+    margin: 20px;
 }
 
 .input-container {
-    height: 25px;
+    width: 100%;
 }
 
 .erro {
@@ -175,6 +176,15 @@ a {
 
     main p, main ul {
         flex: 1;
+    }
+    
+    #form-contato {
+        flex-direction: row;
+        gap: 15px 5px;
+    }
+
+    .input-container {
+        height: 25px;
     }
 }
 
