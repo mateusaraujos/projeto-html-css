@@ -121,6 +121,12 @@ li {
     color: white;
 }
 
+#resumo-envio div {
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    font-weight: lighter;
+}
+
 .card {
     background: var(--card-bg);
     color: var(--text-color);

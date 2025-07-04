@@ -8,8 +8,13 @@ const emailInput = document.getElementById("email");
 const erroNome = document.getElementById("erro-nome");
 const erroEmail = document.getElementById("erro-email");
 
+let nome, email;
+
 form.addEventListener("submit", function(event) {
     event.preventDefault(); // Impede o envio do formulário
+    if (document.getElementById("resumo-envio").firstChild) {
+        document.getElementById("resumo-envio").removeChild(document.getElementById("resumo-envio").firstChild); // Limpa o resumo anterior
+    }
     validarFormulario();
 })
 
@@ -80,6 +85,17 @@ function validarFormulario() {
     }
 
     if (valido) {
+        nome = nomeInput.value.trim();
+        email = emailInput.value.trim();
+
+        const resumo = document.createElement("div");
+        resumo.innerHTML = `
+            <h3>Resumo do envio:</h3>
+            <p><strong>Nome:</strong> ${nome}</p>
+            <p><strong>E-mail:</strong> ${email}</p>
+        `;
+        document.getElementById("resumo-envio").appendChild(resumo);
+
         emailInput.value = ""; // Limpa o campo de email após a validação
         emailInput.classList.remove("erro", "sucesso");
         nomeInput.value = ""; // Limpa o campo de nome após a validação
